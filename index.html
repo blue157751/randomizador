@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="container text-light">
+
+    <!-- Título/logo do site -->
+    <header>
+        <h1 class="text-center logo-site">Sorteador de palavras</h1>
+    </header>
+
+    <!-- Formulário -->
+    <main class="corpo">
+        <form class="form" id="form">
+            <label for="palavras" class="indicacao">
+                Digite as palavras que deseja sortear.
+                Todas as palavras devem ser separadas por uma vírgula ","
+            </label><br>
+            <textarea class=" bg-dark form-control mb-5 text-light" name="palavras" id="palavras" rows="5"></textarea>
+            <button class="btn mt-2 bg-primary p-4 text-light" type="submit">Enviar</button>
+        </form>
+
+        <!-- Campo onde a palavra sorteada será retornada -->
+        <div>
+            <p class="text-center text-light mt-2 mb-5 paragrafo " id="palavraSorteada"></p>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="footer text-center">
+            Site desenvolvido por <a href="https://github.com/blue157751" target="_blank">Victor Gabriel</a>
+          </footer>
+    </main>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
