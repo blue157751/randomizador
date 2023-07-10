@@ -38,10 +38,7 @@
   }
 
   .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     background-color: #333;
@@ -52,3 +49,13 @@
     font-weight: bold;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 600px) {
+    .form {
+        min-height: 300px;
+    }
+
+    .logo-site {
+      font-size: 3rem;
+    }
+}
